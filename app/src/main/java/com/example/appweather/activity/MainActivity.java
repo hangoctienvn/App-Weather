@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
         service.gethour().enqueue(new Callback<List<Weather>>() {
             @Override
             public void onResponse(Call<List<Weather>> call, Response<List<Weather>> response) {
-                if(response.body() == null) return;
+                if(response.body() == null)
+                    return;
 
                 List<Weather> listWeather = response.body();
                 HourAdapter adapter = new HourAdapter(MainActivity.this,listWeather);

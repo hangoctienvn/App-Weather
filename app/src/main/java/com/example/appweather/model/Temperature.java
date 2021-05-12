@@ -19,7 +19,4 @@ public class Temperature {
         Unit = unit;
     }
 
-
-
-
 }
