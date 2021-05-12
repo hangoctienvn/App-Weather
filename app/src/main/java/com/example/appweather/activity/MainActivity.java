@@ -1,16 +1,17 @@
-package com.example.appweather;
+package com.example.appweather.activity;
+
+import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-
+import com.example.appweather.R;
 import com.example.appweather.adapter.HourAdapter;
 import com.example.appweather.model.Weather;
 import com.example.appweather.network.ApiManager;
+
 
 import java.util.List;
 
