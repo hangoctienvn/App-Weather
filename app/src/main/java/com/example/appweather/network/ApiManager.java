@@ -10,9 +10,9 @@ import retrofit2.http.GET;
 public interface ApiManager {
     public static String BASE_URL = "https://dataservice.accuweather.com/";
 
-    @GET("http://dataservice.accuweather.com/alarms/v1/1day/353412?apikey=YvLXLyI3SiE8xuQKF3p4A1B1I1RksiXR&language=vi-vn")
+    @GET("http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/353412?apikey=93Qg780lHwYM4SO58n7DFPLqHg4oKADn&language=vi-vn&metric=true")
     Call<List<Weather>> gethour();
 
-    @GET("http://dataservice.accuweather.com/alarms/v1/5day/353412?apikey=93Qg780lHwYM4SO58n7DFPLqHg4oKADn&language=vi-vn")
+    @GET("http://dataservice.accuweather.com/forecasts/v1/daily/5day/353412?apikey=tbFOLXfZmAxAexEYOmXhcxnbZBDjQBSh&language=vi-vn&metric=true")
     Call<List<Weather>> getDay();
 }
